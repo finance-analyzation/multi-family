@@ -22,7 +22,7 @@ function computeRealestate(){
 	var purchase_amount = document.getElementById('purchase_amount').value;
 	var down_payment_percentage = document.getElementById('down_payment_percentage').value;
 	var down_payment = (purchase_amount * down_payment_percentage / 100).toFixed(2);
-	var	interest_rate = document.getElementById('interest_rate').value;	
+	var interest_rate = document.getElementById('interest_rate').value;	
 	var closing_cost = document.getElementById('closing_cost').value;
 	var renovation_cost = document.getElementById('renovation_cost').value;	
 	var initial_investment = (down_payment_percentage / 100 * purchase_amount + +renovation_cost + +closing_cost).toFixed(2);
@@ -66,15 +66,14 @@ function computeRealestate(){
 		
 	//-----------Second Row Variables----------------//		
 	
-		
-			var unit1 = document.getElementById('unit1').value;
-			var unit2 = document.getElementById('unit2').value;
-			var unit3 = document.getElementById('unit3').value;
-			var unit4 = document.getElementById('unit4').value;
+		var unit1 = document.getElementById('unit1').value;
+		var unit2 = document.getElementById('unit2').value;
+		var unit3 = document.getElementById('unit3').value;
+		var unit4 = document.getElementById('unit4').value;
 		var rent = (+unit1 + +unit2 + +unit3 + +unit4);
 		var taxes = document.getElementById('taxes').value;
 		var insurance = document.getElementById('insurance').value;
-			var lawn = document.getElementById('lawn').value;
+		var lawn = document.getElementById('lawn').value;
 
 			
 		var total_revenue = (+rent).toFixed(2);
